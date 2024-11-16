@@ -1,0 +1,96 @@
+:root{
+    --main-color:#320639;
+    --secondry-color:#192a56;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto", sans-serif;
+  
+}
+body{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    
+}
+
+
+img{
+    display: block;
+    width: 100%;
+}
+.section-suptitle{
+    max-width: 500px;
+}
+/* .main-color{
+    color: var(--main-color) !important;
+} */
+
+
+.quote{
+    height: 100vh;
+    background-image: url(../images/background3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.quote::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.266);
+    z-index: 1;
+}
+
+.card{
+    z-index: 2 !important;
+    background: linear-gradient(rgba(0, 0, 255, 0.27), rgba(193, 193, 238, 0.27));
+    position: relative;
+    width: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 1s ease;
+    
+}
+
+.card-body {
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1s ease; 
+    position: relative;
+}
+
+.card-footer {
+    box-shadow: 4px 4px 8px 4px rgba(157, 90, 208, 0.2);
+    transition: background 3s ease, box-shadow 3s ease;
+}
+
+.card-footer:hover {
+    background: linear-gradient(rgba(188, 45, 145, 0.27), rgba(193, 193, 238, 0.27));
+    box-shadow: 6px 6px 8px 6px rgba(157, 90, 208, 0.3);
+}
+
+.btn {
+    border-image:  linear-gradient(to right, #0066ff, #9b0278) 1 !important;
+    border-width: 3px !important;
+    border-style: solid;
+}
+.fade-out {
+    opacity: 0; 
+}
+
+.card-body .icon-left{
+    font-size: 40px;
+    color: var(--main-color);
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+.card-body .icon-right{
+    font-size: 40px;
+    color: var(--main-color);
+    position: absolute;
+    right: 20px;
+    bottom:0;
+}
